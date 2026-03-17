@@ -83,7 +83,6 @@ TokenList stringToTokenList(char *string){
             i++; // skip the operator since we processed two tokens
         }
     }
-    tokenArrayPrinter(tokenArray.array);
     return tokenArray;
 }
 
@@ -128,10 +127,11 @@ double calculateOperation(TokenList tokenArray){
                     copy.array[k] = copy.array[k+2];
                 copy.size -= 2;
                 j--; // recheck the posision after the shift
+                tokenArrayPrinter(copy.array);
             }
         }
-        tokenArrayPrinter(copy.array);
     }
+
     double result = copy.array[0].operand;
     free(copy.array);
     return result;
