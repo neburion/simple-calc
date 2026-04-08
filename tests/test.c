@@ -156,8 +156,8 @@ int main(void) {
     printf(".\n.\n.\n");
     test_stringToTokenList();
     printf(".\n.\n.\n");
-    test_calculateTwoTokens();
+    test_calculateBinaryOperation();
     printf(".\n.\n.\n");
-    test_calculateTokenArray();
+    test_calculateOperation();
     return 0;
 }
