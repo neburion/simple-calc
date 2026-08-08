@@ -6,6 +6,7 @@ A terminal calculator written in C. Takes a math expression as input, parses it 
 ## How to Run
 ```bash
 git clone https://github.com/neburion/simple-calc.git
+cd simple-calc
 make release
 ./bin/simple-calc
 ```
